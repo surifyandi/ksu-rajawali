@@ -1,10 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html lang="en-US">
 <html>
 	<head>
+	<meta charset="UTF-8">
 		<title>KSU Rajawali Nusantara</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
 	    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="css/main.css" type="text/css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,800" rel="stylesheet">
 	</head>
 	<body>
@@ -18,7 +22,7 @@
 						<ul>
 							<li><a href="#">home</a></li>
 							<li class="dropdown-nav">
-								<a href="#">profil</a>
+								<a href="#">profil <i class="fa fa-sort-down"></i></a>
 								<ul>
 									<li><a href="#">visi misi</a></li>
 									<li><a href="#">sejarah pembentukan</a></li>
@@ -27,7 +31,7 @@
 								</ul>
 							</li>
 							<li class="dropdown-nav">
-								<a href="#">data anggota</a>
+								<a href="#">data anggota <i class="fa fa-sort-down"></i></a>
 								<ul>
 									<li><a href="#">data anggota mahasiswa</a></li>
 									<li><a href="#">data anggota alumni</a></li>
@@ -60,19 +64,19 @@
 			<div class="row-item">
 				<a href="#">
 					<div class="content">
-						<?php include "images/icon/target.svg"; ?>
+						<?php echo file_get_contents("images/icon/target.svg");  ?>
 						<span>visi misi</span>
 					</div>
 				</a>
 				<a href="#">
 					<div class="content">
-						<?php include "images/icon/courthouse.svg"; ?>
+						<?php echo file_get_contents("images/icon/courthouse.svg");  ?>
 						<span>sejarah</span>
 					</div>
 				</a>
 				<a href="#">
 					<div class="content">
-						<?php include "images/icon/employment-deal.svg"; ?>
+						<?php echo file_get_contents("images/icon/employment-deal.svg");  ?>
 						<span>hak kewajiban</span>
 					</div>
 				</a>
@@ -221,36 +225,46 @@
 				</article>
 			</div>
 		</section>
+
+		<!-- footer start -->
 		<footer>
 			<div class="container">
 				<div class="col-md-4 address">
-					<h5>KOPERASI RAJAWALI NUSANTARA</h5>
+					<div class="logo">
+						<img src="images/logo.png">	
+						<h4>KOPERASI <br> RAJAWALI NUSANTARA</h4>
+					</div>
 					<ul>
-						<li>Jalan Lorem Ipsum Dolor Sit Amet, No.55</li>
-						<li>Pontianak, Kalimantan Barat</li>
-						<li>78115</li>
+						<p>Jalan Lorem Ipsum Dolor Sit Amet, No.55</p>
+						<p>Pontianak, Kalimantan Barat</p>
+						<p>78115</p>
 					</ul>
 				</div>
 				<div class="col-md-4 contact">
-					<h5>HUBUNGI KAMI</h5>
+					<h4 class="title-footer">HUBUNGI KAMI</h4>
 					<ul>
 						<li class="phone"><i class="fa fa-phone"></i> <span>+62 813-345-345, +62 888-123-123</span></li>
-						<li class="mail"><i class="fa fa-envelope"></i> <span>halo@ksurajanusa.com, support@rajanusa.com</span></li>
+						<li class="mail"><i class="fa fa-envelope"></i> <span>halo@ksurajanusa.com <br> support@rajanusa.com</span></li>
 						<li class="fb"><i class="fa fa-facebook"></i> <span>Koperasi Rajawali Nusantara</span></li>
 						<li class="tw"><i class="fa fa-twitter"></i> <span>@ksurajanusa</span></li>
 					</ul> 
 				</div>
 				<div class="col-md-4 related-link">
-					<h5>LINK TERKAIT</h5>
+					<h4 class="title-footer">LINK TERKAIT</h4>
 					<ul>
-						<li><i class="fa fa-angle-right"></i><a href="#">Koperasi Indonesia</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Universitas Tanjungpura</a></li>
 						<li><i class="fa fa-angle-right"></i><a href="#">Fakultas Teknik Untan</a></li>
-						<li><i class="fa fa-angle-right"></i><a href="#">Nol Derajat</a></li>
-						<li><i class="fa fa-angle-right"></i><a href="#">P2IG UNTAN</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">IAFT</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">LPSE</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Disperindag</a></li>
+						<li><i class="fa fa-angle-right"></i><a href="#">Dinas Koperasi dan UKM</a></li>
 					</ul> 
 				</div>
 			</div>
 		</footer>
+		<!-- footer end -->
+
+		<!-- copyright start -->
 		<div class="copyright">
 			<div class="container">
 				<div class="col-md-12">
@@ -258,6 +272,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- copyright end -->
 	</body>
 	<script src="vendor/jquery/jquery-3.1.0.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>

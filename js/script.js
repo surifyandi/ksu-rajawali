@@ -5,20 +5,20 @@ $(document).ready(function(){
 		var scroll = $(window).scrollTop();
 
 		if(scroll > 150){
-			$(".navigation").addClass("active");
+			$(".navigation").addClass("scrollspy-nav");
 		}else{
-			$(".navigation").removeClass("active");
+			$(".navigation").removeClass("scrollspy-nav");
 		}
 	});
 
 	//dropdown trigger
 
-	$("nav.navigation ul li.dropdown").click(function(e){
+	$("nav.navigation ul li.dropdown-nav").click(function(e){
 		if($(this).hasClass("active")){
-			$("nav.navigation ul li.dropdown").removeClass("active");
+			$("nav.navigation ul li.dropdown-nav").removeClass("active");
 			$(this).removeClass("active");
 		}else{
-			$("nav.navigation ul li.dropdown").removeClass("active");
+			$("nav.navigation ul li.dropdown-nav").removeClass("active");
 			$(this).addClass("active");
 		}
 
