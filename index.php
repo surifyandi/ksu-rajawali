@@ -12,33 +12,40 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,800" rel="stylesheet">
 	</head>
 	<body>
+
+		<!-- header -->
 		<header>
 			<nav class="navigation">
+				<div class="btn-navmobile">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<div class="container">
 					<div class="col-md-2 col-sm-12 col-xs-12">
 						<img src="images/logo.png" class="logo"/>
 					</div>
 					<div class="col-md-10 col-sm-12 col-xs-12">
 						<ul>
-							<li><a href="#">home</a></li>
+							<li><a href="index.php">home</a></li>
 							<li class="dropdown-nav">
-								<a href="#">profil <i class="fa fa-sort-down"></i></a>
+								<a href="#" class="dead-link">profil <i class="fa fa-sort-down"></i></a>
 								<ul>
-									<li><a href="#">visi misi</a></li>
-									<li><a href="#">sejarah pembentukan</a></li>
-									<li><a href="#">hak dan kewajiban</a></li>
-									<li><a href="#">ad / art</a></li>
+									<li><a href="profil.php">visi misi</a></li>
+									<li><a href="profil.php">sejarah pembentukan</a></li>
+									<li><a href="profil.php">hak dan kewajiban</a></li>
+									<li><a href="profil.php">ad / art</a></li>
 								</ul>
 							</li>
 							<li class="dropdown-nav">
-								<a href="#">data anggota <i class="fa fa-sort-down"></i></a>
+								<a href="#" class="dead-link">data anggota <i class="fa fa-sort-down"></i></a>
 								<ul>
 									<li><a href="#">data anggota mahasiswa</a></li>
 									<li><a href="#">data anggota alumni</a></li>
 								</ul>
 							</li>
-							<li><a href="#">produk</a></li>
-							<li><a href="#">berita</a></li>
+							<li><a href="list-produk.php">produk</a></li>
+							<li><a href="list-berita.php">berita</a></li>
 							<li><a href="#">event</a></li>
 							<li><a href="#">chat room</a></li>
 							<li><a href="#">bantuan</a></li>
@@ -48,6 +55,9 @@
 				</div>
 			</nav>
 		</header>
+		<!-- end of header -->
+
+		<!-- main banner -->
 		<section class="banner-top home">
 			<div class="container">
 				<div class="content">
@@ -60,6 +70,9 @@
 				</div>
 			</div>	
 		</section>
+		<!-- end of main banner -->
+
+		<!-- top item -->
 		<section class="top-item home">
 			<div class="row-item">
 				<a href="#">
@@ -68,12 +81,14 @@
 						<span>visi misi</span>
 					</div>
 				</a>
+
 				<a href="#">
 					<div class="content">
 						<?php echo file_get_contents("images/icon/courthouse.svg");  ?>
 						<span>sejarah</span>
 					</div>
 				</a>
+
 				<a href="#">
 					<div class="content">
 						<?php echo file_get_contents("images/icon/employment-deal.svg");  ?>
@@ -82,6 +97,9 @@
 				</a>
 			</div>
 		</section>
+		<!-- end of top item -->
+
+		<!-- about us -->
 		<section class="about-us home">
 			<div class="container">
 				<article>
@@ -95,6 +113,9 @@
 				</article>
 			</div>
 		</section>
+		<!-- end of about us -->
+
+		<!-- new product -->
 		<section class="new-product">
 			<div class="intro">
 				<h2 class="big-title">produk terbaru</h2>
@@ -110,6 +131,7 @@
 						</figcaption>
 					</figure>
 				</a>
+
 				<a href="#">
 					<figure>
 						<img src="images/thumb/product/produk-2.jpg">
@@ -119,6 +141,7 @@
 						</figcaption>
 					</figure>
 				</a>
+
 				<a href="#">
 					<figure>
 						<img src="images/thumb/product/produk-3.jpg">
@@ -128,6 +151,7 @@
 						</figcaption>
 					</figure>
 				</a>
+
 				<a href="#">
 					<figure>
 						<img src="images/thumb/product/produk-4.jpg">
@@ -139,12 +163,16 @@
 				</a>
 			</div>
 		</section>
+		<!-- end of new product -->
+
+		<!-- latest event -->
 		<section class="latest-event">
 			<div class="container">
 				<div class="col-md-12">
 					<h2 class="big-title">event terbaru</h2>
 				</div>
-				<article class="col-md-4">
+
+				<article class="col-md-4 col-sm-12 col-xs-12">
 					<div class="date">
 						<div class="day">15</div>
 						<div class="month">nov</div>
@@ -155,7 +183,8 @@
 					</p>
 					<a href="#" class="readmore">selengkapnya &nbsp <i class="fa fa-long-arrow-right"></i></a>
 				</article>
-				<article class="col-md-4">
+
+				<article class="col-md-4 col-sm-12 col-xs-12">
 					<div class="date">
 						<div class="day">15</div>
 						<div class="month">nov</div>
@@ -166,7 +195,8 @@
 					</p>
 					<a href="#" class="readmore">selengkapnya &nbsp <i class="fa fa-long-arrow-right"></i></a>
 				</article>
-				<article class="col-md-4">
+
+				<article class="col-md-4 col-sm-12 col-xs-12">
 					<div class="date">
 						<div class="day">15</div>
 						<div class="month">nov</div>
@@ -177,14 +207,19 @@
 					</p>
 					<a href="#" class="readmore">selengkapnya &nbsp <i class="fa fa-long-arrow-right"></i></a>
 				</article>
+
 			</div>
 		</section>
+		<!-- end of latest event -->
+
+		<!-- latest news -->
 		<section class="latest-news">
 			<div class="container">
 				<div class="col-md-12">
 					<h2 class="big-title">berita terbaru</h2>
 				</div>
-				<article class="col-md-4 col-xs-12">
+
+				<article class="col-md-4 col-sm-12 col-xs-12">
 					<figure>
 						<img src="images/thumb/news/berita-1.jpg">
 						<figcaption>
@@ -197,7 +232,8 @@
 						</figcaption>
 					</figure>
 				</article>
-				<article class="col-md-4 col-xs-12">
+
+				<article class="col-md-4 col-sm-12 col-xs-12">
 					<figure>
 						<img src="images/thumb/news/berita-2.jpg">
 						<figcaption>
@@ -210,7 +246,8 @@
 						</figcaption>
 					</figure>
 				</article>
-				<article class="col-md-4 col-xs-12">
+
+				<article class="col-md-4 col-sm-12 col-xs-12">
 					<figure>
 						<img src="images/thumb/news/berita-3.jpg">
 						<figcaption>
@@ -223,8 +260,10 @@
 						</figcaption>
 					</figure>
 				</article>
+
 			</div>
 		</section>
+		<!-- end of latest news -->
 
 		<!-- footer start -->
 		<footer>
