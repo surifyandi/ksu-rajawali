@@ -261,6 +261,15 @@
 	/*end of sidebar*/
 
 
+	/*login*/
+
+	.login-area form{
+		width: 100%;
+	}
+
+	/*end of login*/
+
+
 	/*footer*/
 
 	footer .address,
@@ -339,4 +348,29 @@
 	}
 
 	/*end of new product*/
+
+
+	/*form signup*/
+
+	.form-signup{
+		width: 100%;
+	}
+
+	/*end of form signup*/
+
+
+	/*login*/
+
+	.login-area,
+	.banner-login{
+		width: 100%;
+		display: block;
+		padding: 0;
+	}
+
+	.banner-login{
+		margin-bottom: 60px;
+	}
+
+	/*end of form login*/
 }

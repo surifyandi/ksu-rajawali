@@ -44,12 +44,12 @@
 									<li><a href="#">data anggota alumni</a></li>
 								</ul>
 							</li>
-							<li><a href="#">produk</a></li>
+							<li><a href="list-produk.php">produk</a></li>
 							<li><a href="list-berita.php">berita</a></li>
 							<li><a href="#">event</a></li>
 							<li><a href="#">chat room</a></li>
 							<li><a href="#">bantuan</a></li>
-							<li class="login"><a href="#">login</a></li>
+							<li class="login"><a href="login.php">login</a></li>
 						</ul>
 					</div>
 				</div>
@@ -61,10 +61,10 @@
 		<section class="breadcrumb">
 			<div class="container">
 				<div class="col-md-12">
-					<h3>DETAIL BERITA</h3>
+					<h3>LOGIN</h3>
 					<ul>
 						<li><a href="#">Home</a></li>
-						<li class="active"><a href="#">Berita</a></li>
+						<li class="active"><a href="#">Login</a></li>
 					</ul>
 				</div>
 			</div>
@@ -75,32 +75,32 @@
 
 		<section class="content">
 			<div class="container">
-
-				<!-- side left -->
-				<div class="col-md-9 left-bar list-news">
-					<h3></h3>
+				<div class="banner-login">
+					<img src="images/logo-black.png" />
+					<h2>Koperasi Rajawali<br />Nusantara</h2>
 				</div>
-				<!-- end of side left -->
+				<div class="login-area">
+					<form>
+						<div class="form-group">
+							<label>Email</label>
+							<input type="text" placeholder="masukkan email anda" class="form-control" />
+						</div>
 
-				<!-- side right -->
-				<div class="col-md-3 right-bar">
+						<div class="form-group">
+							<label>Password</label>
+							<input type="passwor" placeholder="masukkan password anda" class="form-control" />
+						</div>
 
-					<!-- side group news -->
+						<div class="form-group">
+							<button class="btn btn-primary">Masuk &nbsp <i class="fa fa-sign-in"></i></button>
+						</div>
 
-					<section class="side-profil">
-						<h4 class="title">PROFIL</h4>
 						<ul>
-							<li><a href="#">Visi Misi</a></li>
-							<li><a href="#">Sejarah Pembentukan</a></li>
-							<li><a href="#">Hak dan Kewajiban</a></li>
-							<li><a href="#">AD / ART</a></li>
+							<li><a href="#">belum punya akun ?</a></li>
+							<li><a href="#">lupa password</a></li>
 						</ul>
-					</section>
-
-					<!-- end of side group news -->
-
+					</form>
 				</div>
-				<!-- end of side right -->
 
 			</div>
 		</section>

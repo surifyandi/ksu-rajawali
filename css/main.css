@@ -95,13 +95,20 @@ header nav.navigation ul > li{
 
 header nav.navigation ul > li > a{
 	color: #fff;
-	font-size: 14px;
+	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: 700;
 	-webkit-transition: .3s ease-in-out;
 	-moz-transition: .3s ease-in-out;
 	-o-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+}
+
+header nav.navigation ul > li.login > a{
+	background: #337ab7;
+	color: #fff !important;
+	padding: 4px 8px;
+	border-radius: 3px;
 }
 
 header nav.navigation ul > li > a:hover{
@@ -182,6 +189,10 @@ header.white{
 header nav.navigation.scrollspy-nav ul > li > a,
 header.white nav.navigation ul > li > a{
 	color: #333;
+}
+
+header nav.navigation.scrollspy-nav ul > li.login > a{
+	color: #fff !important;
 }
 
 /*end of scrollspy navigation*/
@@ -1066,6 +1077,110 @@ section.content .list-product article a.more:hover{
 
 /*end of sidebar*/
 
+
+/*sign up*/
+
+h2.title-signup{
+	display: block;
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight: 300;
+}
+
+.form-signup{
+	display: block;
+	width: 55%;
+	margin: auto;
+	background: #f1f1f1;
+	border: 1px solid #e9e9e9;
+	padding: 30px;
+}
+
+.form-signup input,
+.form-signup select,
+.form-signup textarea{
+	border-radius: 0;
+}
+
+.form-signup .form-group{
+	margin-bottom: 30px;
+}
+
+.form-signup .btn{
+	border-radius: 0;
+}
+
+.form-signup .form-group .checkbox-inline span{
+	line-height: 24px;
+}
+
+/*end of sign up*/
+
+
+/*sign in*/
+.login-area,
+.banner-login{
+	width: 50%; 
+	display: inline-table;
+	vertical-align: middle;
+	margin: -4px;
+}
+
+.banner-login{
+	padding-right: 30px;
+	text-align: center;
+}
+
+.banner-login img{
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+.banner-login h2{
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 40px;
+}
+
+.login-area{
+	padding-left: 30px;
+}
+
+.login-area form{
+	background: #f1f1f1;
+	border: 1px solid #e9e9e9;
+	padding: 30px;
+	width: 80%;
+}
+
+.login-area form .form-group{
+	margin-bottom: 25px;
+}
+
+.login-area form .form-group .form-control,
+.login-area form .btn{
+	border-radius: 0;
+}
+
+.login-area form ul{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.login-area form ul li{
+	margin-bottom: 5px;
+}
+
+.login-area form ul li:last-child{
+	margin-bottom: 0;
+}
+
+.login-area form ul li a{
+	font-size: 13px;
+}
+
+/*end of sign in*/
 
 
 /*footer*/

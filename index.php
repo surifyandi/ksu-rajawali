@@ -49,7 +49,7 @@
 							<li><a href="#">event</a></li>
 							<li><a href="#">chat room</a></li>
 							<li><a href="#">bantuan</a></li>
-							<li class="login"><a href="#">login</a></li>
+							<li class="login"><a href="login.php">login</a></li>
 						</ul>
 					</div>
 				</div>
